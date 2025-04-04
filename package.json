@@ -19,6 +19,10 @@
       {
         "command": "extension.activateAgent",
         "title": "Start Autonomous Coding Agent"
+      },
+      {
+        "command": "extension.stopAgent",
+        "title": "Stop Autonomous Coding Agent"
       }
     ]
   },
@@ -26,7 +30,9 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "lint": "eslint src --ext ts"
+    "lint": "eslint src --ext ts",
+    "package": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/node": "^16.x",
@@ -34,7 +40,16 @@
     "@typescript-eslint/eslint-plugin": "^5.x",
     "@typescript-eslint/parser": "^5.x",
     "eslint": "^8.x",
-    "typescript": "^4.x"
+    "typescript": "^4.x",
+    "vsce": "^2.15.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/autonomous-coding-agent"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/autonomous-coding-agent/issues"
+  },
+  "license": "MIT"
 }
