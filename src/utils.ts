@@ -54,10 +54,13 @@ export function debounce(func: Function, wait: number): (...args: any[]) => void
     };
 }
 
-export function checkFileExists(uri: vscode.Uri): Promise<boolean> {
-    return vscode.workspace.fs.stat(uri)
-        .then(() => true)
-        .catch(() => false);
+export async function checkFileExists(uri: vscode.Uri): Promise<boolean> {
+    try {
+        await vscode.workspace.fs.stat(uri);
+        return true;
+    } catch {
+        return false;
+    }
 }
 
 export const EXTENSION_NAME = 'Autonomous Coding Agent';
