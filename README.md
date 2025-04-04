@@ -1,89 +1,53 @@
-
-Built by https://www.blackbox.ai
-
----
-
-```markdown
 # Autonomous Coding Agent
 
-## Project Overview
-The **Autonomous Coding Agent** is a powerful AI-driven coding assistant that helps developers write, edit, and manage code efficiently. It integrates seamlessly with Visual Studio Code (VSCode), providing an interactive and responsive experience to improve coding productivity.
-
-## Installation
-To install the Autonomous Coding Agent, follow the steps below:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/autonomous-coding-agent.git
-   ```
-   
-2. **Navigate to the project directory:**
-   ```bash
-   cd autonomous-coding-agent
-   ```
-   
-3. **Install the dependencies:**
-   ```bash
-   npm install
-   ```
-
-4. **Compile the TypeScript code:**
-   ```bash
-   npm run compile
-   ```
-
-5. **Open the project in VSCode:**
-
-   Make sure you have [Visual Studio Code](https://code.visualstudio.com/) installed. Open the project folder in VSCode.
-
-6. **Activate the extension:**
-
-   You can activate the extension from the command palette (`Ctrl + Shift + P`) by typing "Start Autonomous Coding Agent".
-
-## Usage
-Once the extension is installed and activated, you can start utilizing the features of the Autonomous Coding Agent by running the command:
-
-- **Start Autonomous Coding Agent**
-  
-This will initiate the agent, which will provide assistance based on your coding context.
+A powerful AI-driven coding assistant that helps you write, edit, and manage code efficiently, right in your VSCode editor.
 
 ## Features
-- AI-driven code suggestions and completions.
-- Code editing and refactoring capabilities.
-- Integration with existing coding workflows in VSCode.
-- Real-time feedback and suggestions while coding.
 
-## Dependencies
-The following dependencies are essential for the Autonomous Coding Agent to function correctly (as listed in `package.json`):
+- **File Operations**: Create and edit files directly from the agent interface
+- **Command Execution**: Run terminal commands with real-time output
+- **Browser Integration**: Preview web content and interact with web-based tools
+- **Modern UI**: Clean, responsive interface with Tailwind CSS
+- **Pro Features**: Advanced capabilities for enhanced productivity (requires subscription)
 
-- **Dev Dependencies:**
-  - `@types/node`: TypeScript definitions for Node.js.
-  - `@types/vscode`: TypeScript definitions for Visual Studio Code.
-  - `@typescript-eslint/eslint-plugin`: ESLint plugin for TypeScript.
-  - `@typescript-eslint/parser`: ESLint parser for TypeScript.
-  - `eslint`: Linter for JavaScript and TypeScript styles.
-  - `typescript`: TypeScript language support.
+## Installation
 
-## Project Structure
-The project is structured as follows:
+1. Install the extension from the VSCode marketplace
+2. Open the command palette (Ctrl+Shift+P / Cmd+Shift+P)
+3. Type "Start Autonomous Coding Agent" and press Enter
 
-```
-autonomous-coding-agent/
-├── out/                   # Compiled output folder
-├── src/                   # Source code folder
-│   └── extension.ts       # Main entry file for the extension
-├── .vscode-test/          # Testing configuration for VSCode
-├── package.json           # Project metadata and dependencies
-├── package-lock.json      # Exact versions of installed dependencies
-└── tsconfig.json          # TypeScript configuration file
-```
+## Usage
 
-## Contributing
-Contributions are welcome! If you'd like to contribute to the Autonomous Coding Agent, please fork the repository and submit a pull request.
+The agent can be activated in two ways:
+- Click the robot icon in the status bar
+- Use the command palette and search for "Start Autonomous Coding Agent"
 
-### License
-This project is licensed under the MIT License.
+### Basic Operations
 
-## Author
-* **Marty Montgomery** - *Initial work* - [Marty Montgomery](https://github.com/martymontgomery)
-```
+1. **File Operations**
+   - Click "Create File" to create a new file
+   - Click "Edit File" to modify an existing file
+
+2. **Command Execution**
+   - Click "Run Command" to execute terminal commands
+   - View real-time output in the activity log
+
+3. **Browser Integration**
+   - Click "Open Browser" to preview web content
+   - Interact with web-based tools directly in VSCode
+
+## Pro Features
+
+Upgrade to Pro to unlock advanced features:
+- Advanced code generation
+- Custom templates
+- Team collaboration
+- Code analytics
+
+## Creator
+
+Created by Marty Montgomery
+
+## License
+
+MIT License - See LICENSE file for details
